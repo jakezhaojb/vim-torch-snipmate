@@ -175,5 +175,5 @@ syn keyword packageName torch
 syn keyword packageName trepl
 
 " definition
-  hi link packageName             Label   
-  hi link moduleName              Function
+  hi link packageName             Function
+  hi link moduleName              Label
