@@ -1,0 +1,52 @@
+# LUA
+
+snippet re
+	require
+	${1}
+
+
+# Torch
+# New class
+snippet cl
+	local ${1:LocalName}, parent = torch.class(${2:ModuleName}, ${3:ParentName})
+
+	function $1:__init(${4:arg}) then
+		parent:__init()
+		self.$4 = $4
+	end
+	${0}
+
+
+# Some utils
+snippet spc
+	SpatialConvolution(${1:inputSize}, ${2:outputSize}, ${3:kernelSizeW}, ${4:kernelSizeH})
+
+snippet spm
+	SpatialMaxPooling(${1:poolSizeW}, ${2:poolSizeH})
+
+snippet tpc
+	TemporalConvolution(${1:inputSize}, ${2:outputSize}, ${3:kernelSizeW})
+
+snippet tpm
+	TemporalMaxPooling(${1:poolSizeW})
+
+snippet vpc
+	VolumetricConvolution(${1:inputSize}, ${2:outputSize}, ${3:kernelSizeT}, ${4:kernelSizeW}, ${5:kernelSizeH})
+
+snippet vpm
+	VolumetricMaxPooling(${1:poolSizeT}, ${2:poolSizeW}, ${3:poolSizeH})
+
+snippet re
+	ReLU()
+
+snippet sig
+	Sigmoid()
+
+snippet tan
+	Tanh()
+
+snippet forw
+	forward(${1:input})
+
+snippet back
+	backward(${1:input}, ${2:gradOutput})
