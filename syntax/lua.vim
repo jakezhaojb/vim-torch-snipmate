@@ -174,6 +174,30 @@ syn keyword packageName nngraph
 syn keyword packageName torch
 syn keyword packageName trepl
 
+" Function calls
+syn keyword callName parameters
+syn keyword callName updateOutput
+syn keyword callName forward
+syn keyword callName backward
+syn keyword callName backwardUpdate
+syn keyword callName updateGradInput
+syn keyword callName accGradParameters
+syn keyword callName accUpdateGradParameters
+syn keyword callName sharedAccUpdateGradParameters
+syn keyword callName zeroGradParameters
+syn keyword callName updateParameters
+syn keyword callName training
+syn keyword callName evaluate
+syn keyword callName share
+syn keyword callName clone
+syn keyword callName float
+syn keyword callName double
+syn keyword callName cuda
+syn keyword callName reset
+syn keyword callName getParameters
+syn keyword callName getParametersByDevice
+
 " definition
   hi link packageName             Function
   hi link moduleName              Label
+  hi link callName                Special
