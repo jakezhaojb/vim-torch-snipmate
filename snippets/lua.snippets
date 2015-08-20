@@ -10,30 +10,30 @@ snippet re
 snippet cl
 	local ${1:LocalName}, parent = torch.class(${2:ModuleName}, ${3:ParentName})
 
-	function $1:__init(${4:arg}) then
-		parent:__init()
+	function $1:__init(${4:arg})
+		parent:__init(self)
 		self.$4 = $4
 	end
 	${0}
 
 
 # Some utils
-snippet spc
+snippet sc
 	SpatialConvolution(${1:inputSize}, ${2:outputSize}, ${3:kernelSizeW}, ${4:kernelSizeH})
 
-snippet spm
+snippet sm
 	SpatialMaxPooling(${1:poolSizeW}, ${2:poolSizeH})
 
-snippet tpc
+snippet tc
 	TemporalConvolution(${1:inputSize}, ${2:outputSize}, ${3:kernelSizeW})
 
-snippet tpm
+snippet tm
 	TemporalMaxPooling(${1:poolSizeW})
 
-snippet vpc
+snippet vc
 	VolumetricConvolution(${1:inputSize}, ${2:outputSize}, ${3:kernelSizeT}, ${4:kernelSizeW}, ${5:kernelSizeH})
 
-snippet vpm
+snippet vm
 	VolumetricMaxPooling(${1:poolSizeT}, ${2:poolSizeW}, ${3:poolSizeH})
 
 snippet re
