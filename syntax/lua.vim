@@ -120,6 +120,7 @@ syn keyword moduleName ffi
 syn keyword moduleName Pointwise
 syn keyword moduleName Pooling
 syn keyword moduleName SpatialSoftMax
+syn keyword moduleName gModule
 
 " Modules
 syn keyword packageName randomkit
