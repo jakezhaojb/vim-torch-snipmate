@@ -78,6 +78,7 @@ syn keyword moduleName SpatialLPPooling
 syn keyword moduleName L1Penalty
 syn keyword moduleName JoinTable
 syn keyword moduleName Module
+syn keyword moduleName gModule
 syn keyword moduleName LogSigmoid
 syn keyword moduleName Max
 syn keyword moduleName Parallel
@@ -90,7 +91,6 @@ syn keyword moduleName ErrorMessages
 syn keyword moduleName FlattenTable
 syn keyword moduleName SpatialAveragePooling
 syn keyword moduleName Sqrt
-syn keyword moduleName test
 syn keyword moduleName SpatialAdaptiveMaxPooling
 syn keyword moduleName Abs
 syn keyword moduleName LogSoftMax
@@ -155,7 +155,6 @@ syn keyword packageName dok
 syn keyword packageName mattorch
 syn keyword packageName audio
 syn keyword packageName gfx
-syn keyword packageName myaenn2
 syn keyword packageName jit
 syn keyword packageName cephes
 syn keyword packageName env
@@ -196,6 +195,20 @@ syn keyword callName cuda
 syn keyword callName reset
 syn keyword callName getParameters
 syn keyword callName getParametersByDevice
+syn keyword callName synchronize
+syn keyword callName setDevice
+syn keyword callName getDevice
+syn keyword callName getDeviceCount
+syn keyword callName getMemoryUsage
+syn keyword callName seed
+syn keyword callName seedAll
+syn keyword callName initialSeed
+syn keyword callName manualSeed
+syn keyword callName manualSeedAll
+syn keyword callName getRNGState
+syn keyword callName setRNGState
+syn keyword callName getState
+syn keyword callName withDevice
 
 " definition
   hi link packageName             Function
